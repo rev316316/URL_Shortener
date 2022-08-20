@@ -22,6 +22,6 @@ def create_app():
 
 
 def create_database(app):
-    if not path('URLShortener/' + DB_Name):
+    if not path('URL-Shortener/' + DB_Name):
         db.create_all(app=app)
         print('Created Database!')
