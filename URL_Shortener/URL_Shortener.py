@@ -1,6 +1,7 @@
 from flask import Flask, redirect, Blueprint
 import hashlib
-
+# URL_Dict is the current storage of the shortnened URLs and full lenght URLS
+# to-do store this in db
 url_dict = {"randombullshit": "google.com"}
 
 us = Blueprint('us', __name__)
